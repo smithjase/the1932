@@ -238,11 +238,18 @@
   }
  
   .photo{
-    margin:3rem 0 0;padding:2.4rem;
-    border:1px dashed rgba(176,141,67,.55);
-    min-height:10rem;display:flex;align-items:center;justify-content:center;
-    font-family:var(--data);font-size:.72rem;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--brass);text-align:center;
+    margin:3rem 0 0;
+    display:flex;flex-direction:column;align-items:flex-start;
+  }
+  .photo img{
+    display:block;width:100%;max-width:22rem;height:auto;
+    border:1px solid rgba(176,141,67,.55);
+    padding:.5rem;background:rgba(237,239,232,.04);
+  }
+  .photo figcaption{
+    font-family:var(--data);font-size:.72rem;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--brass);
+    margin:1rem 0 0;line-height:1.7;max-width:22rem;
   }
  
   /* ---------- hospital ---------- */
@@ -342,7 +349,7 @@
     <div class="hero-rule"></div>
     <p class="hero-tag">One number. Three units. Three days.</p>
     <div class="hero-meta">
-      <span><span class="tbc">[Bank holiday weekend — date TBC]</span></span>
+      <span>29&ndash;31 May 2027</span>
       <span>Surrey &middot; The Thames &middot; The Bath Road</span>
       <span>Finishing at Devonshire Place, W1</span>
     </div>
@@ -395,7 +402,7 @@
     <div class="daygrid">
  
       <article class="day">
-        <p class="eyebrow eyebrow--dark">Day one &middot; Saturday</p>
+        <p class="eyebrow eyebrow--dark">Day one &middot; Saturday 29 May</p>
         <h3 class="sub">The Hill</h3>
         <p>Box Hill's Zig&nbsp;Zag Road climbs 129 metres in two and a half kilometres. Fifteen ascents makes 1,932. For scale, the 2012 Olympic road race climbed it nine times.</p>
         <p>Box Hill &amp; Westhumble station sits at the foot of the climb, so you can do two ascents or all fifteen and still be home for lunch.</p>
@@ -408,7 +415,7 @@
       </article>
  
       <article class="day">
-        <p class="eyebrow eyebrow--dark">Day two &middot; Sunday</p>
+        <p class="eyebrow eyebrow--dark">Day two &middot; Sunday 30 May</p>
         <h3 class="sub">The River</h3>
         <p>19.32 kilometres of the Thames Path, downstream from Teddington Lock — where the tidal Thames begins — through Richmond and Kew to Putney.</p>
         <p>Flat, riverside and entirely traffic-free, with eight bridges along the way. Join at any of them, run or walk as far as suits you, get the train home.</p>
@@ -421,7 +428,7 @@
       </article>
  
       <article class="day">
-        <p class="eyebrow eyebrow--dark">Day three &middot; Monday</p>
+        <p class="eyebrow eyebrow--dark">Day three &middot; Monday 31 May</p>
         <h3 class="sub">The Road</h3>
         <p>193.2 kilometres from Bath to Marylebone, following the line of the old Bath Road east through the Vale of Pewsey and the Kennet valley before turning for London.</p>
         <p>The last mile finishes at Devonshire Place — the front door of the hospital the number belongs to.</p>
@@ -461,9 +468,10 @@
       <p class="close">An annual endurance challenge, to raise money for cancer care and to honour his legacy. The 1932 is the first.</p>
     </div>
  
-    <div class="photo">
-      [ Photograph &mdash; David &amp; Jason ]
-    </div>
+    <figure class="photo">
+      <img src="david-and-jason.jpg" alt="David and Jason before the Cardiff Half Marathon">
+      <figcaption>David and Jason &mdash; Cardiff Half Marathon, 2016</figcaption>
+    </figure>
   </div>
 </section>
  
@@ -547,7 +555,7 @@
     <li><strong>Why I ride</strong> is Jason's own board write-up, lightly tidied for the page (punctuation, and Kevin Webster's quote set as reported speech). The ride321.cc copy has been retired.</li>
     <li><strong>Names.</strong> David's wife is named in the board version but not here &mdash; worth checking with her before either version is circulated.</li>
     <li><strong>The appeal.</strong> The single most important box to fill: name one tangible thing this first edition pays for. A named room, machine or ward raises more than "cancer care" in general. Agree it with the fundraising team early.</li>
-    <li><strong>Photography.</strong> The page is built to carry images &mdash; a photograph of David &amp; Jason goes in the marked frame, plus one on the Zig Zag, one on the river at Teddington Lock, and one at Devonshire Place.</li>
+    <li><strong>Photography.</strong> The David &amp; Jason photo (Cardiff Half, 2016) is now placed. The file <code>david-and-jason.jpg</code> must sit in the repo root alongside <code>index.html</code>, or the image won't load. Optional additions: a shot on the Zig Zag, one on the river at Teddington Lock, and one at Devonshire Place.</li>
     <li><strong>For the fundraising team.</strong> The Saturday on Box Hill is the day that decides what this raises. It's the only one with a natural drop-in format and a station at the start line. Worth building recruitment around that day specifically, rather than around the Monday ride.</li>
   </ul>
 </div>
@@ -561,4 +569,3 @@
  
 </body>
 </html>
- 
