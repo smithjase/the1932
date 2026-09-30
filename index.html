@@ -17,12 +17,12 @@
     --paper-dk:#dcdfd4;
     --oxblood:#7c2028;
     --brass:#b08d43;
- 
+
     --display:'Oswald','Haettenschweiler','Arial Narrow',sans-serif;
     --data:'IBM Plex Mono','SFMono-Regular',Consolas,monospace;
     --body:'Source Serif 4',Georgia,'Times New Roman',serif;
   }
- 
+
   *{box-sizing:border-box;}
   html{-webkit-text-size-adjust:100%;}
   body{
@@ -34,9 +34,9 @@
     line-height:1.62;
     -webkit-font-smoothing:antialiased;
   }
- 
+
   .wrap{max-width:64rem;margin:0 auto;padding:0 2rem;}
- 
+
   /* ---------- shared type ---------- */
   .eyebrow{
     font-family:var(--data);
@@ -48,7 +48,7 @@
     margin:0 0 1.6rem;
   }
   .eyebrow--dark{color:var(--oxblood);}
- 
+
   h2.head{
     font-family:var(--display);
     font-weight:400;
@@ -69,7 +69,7 @@
   p{margin:0 0 1.1rem;max-width:38em;}
   .lede{font-size:1.15rem;line-height:1.55;}
   a{color:inherit;}
- 
+
   .tbc{
     font-family:var(--data);
     font-size:.86em;
@@ -77,7 +77,7 @@
     border-bottom:1px dotted var(--brass);
     padding-bottom:1px;
   }
- 
+
   /* ---------- hero ---------- */
   .hero{
     background:var(--green);
@@ -96,7 +96,7 @@
   }
   .hero .wrap{position:relative;}
   .hero .eyebrow{color:var(--brass);}
- 
+
   .bignum{
     font-family:var(--data);
     font-weight:600;
@@ -125,11 +125,11 @@
     font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;
     color:rgba(237,239,232,.72);
   }
- 
+
   /* ---------- signature: the moving decimal ---------- */
   .signature{padding:clamp(3.5rem,8vw,6rem) 0;background:var(--paper);}
   .measures{margin:2.6rem 0 0;border-top:1px solid var(--paper-dk);}
- 
+
   .mrow{
     display:flex;align-items:baseline;flex-wrap:wrap;
     gap:.4rem 1.8rem;
@@ -159,7 +159,7 @@
   }
   .p2 .pt:nth-of-type(2)::after{content:".";}
   .p3 .pt:nth-of-type(3)::after{content:".";}
- 
+
   .mwhat{flex:1 1 14rem;min-width:12rem;}
   .mwhat strong{
     display:block;
@@ -168,7 +168,7 @@
     font-size:.95rem;
   }
   .mwhat span{font-size:.95rem;color:#4a544c;}
- 
+
   /* ---------- days ---------- */
   .days{background:var(--paper-dk);padding:clamp(3.5rem,8vw,6rem) 0;}
   .daygrid{display:grid;gap:1.4rem;grid-template-columns:repeat(3,1fr);margin-top:2.4rem;}
@@ -187,13 +187,13 @@
   .stats li{display:flex;justify-content:space-between;gap:1rem;padding:.28rem 0;}
   .stats li span:first-child{color:#5d675f;text-transform:uppercase;letter-spacing:.1em;font-size:.68rem;}
   .stats li span:last-child{text-align:right;}
- 
+
   /* ---------- why I ride ---------- */
   .why{background:var(--green);color:var(--paper);padding:clamp(3.5rem,8vw,6rem) 0;}
   .why h2.head,.why h3.sub{color:var(--paper);}
   .why p{color:rgba(237,239,232,.92);}
   .why .tbc{color:var(--brass);border-bottom-color:rgba(176,141,67,.6);}
- 
+
   .why-quote{
     margin:2.6rem 0 0;
     max-width:44rem;
@@ -236,7 +236,7 @@
     margin-top:2rem;
     max-width:30em;
   }
- 
+
   .photo{
     margin:3rem 0 0;
     display:flex;flex-direction:column;align-items:flex-start;
@@ -251,7 +251,7 @@
     text-transform:uppercase;color:var(--brass);
     margin:1rem 0 0;line-height:1.7;max-width:22rem;
   }
- 
+
   /* ---------- hospital ---------- */
   .hospital{background:var(--paper);padding:clamp(3.5rem,8vw,6rem) 0;}
   .cols{display:grid;gap:3rem;grid-template-columns:1fr 1fr;margin-top:2.4rem;}
@@ -263,7 +263,7 @@
     padding-left:1.4rem;margin:0 0 2rem;max-width:none;
     color:var(--ink);
   }
- 
+
   /* ---------- join ---------- */
   .join{padding:clamp(3.5rem,8vw,6rem) 0;}
   .doors{display:grid;gap:0;margin-top:2.4rem;border-top:2px solid var(--green);}
@@ -276,13 +276,31 @@
     color:var(--brass);line-height:1;
   }
   .door p{margin:0;font-size:.98rem;}
- 
+
   /* ---------- ask ---------- */
   .ask{background:var(--oxblood);color:var(--paper);padding:clamp(3rem,7vw,5rem) 0;}
   .ask h2.head{color:var(--paper);}
   .ask p{color:rgba(237,239,232,.92);}
   .ask .tbc{color:var(--paper);border-bottom-color:rgba(237,239,232,.5);}
- 
+  .ask .contact{
+    font-family:var(--data);
+    font-size:clamp(1.15rem,3vw,1.6rem);
+    letter-spacing:.02em;
+    margin:1.6rem 0 0;
+  }
+  .ask .contact a{
+    color:var(--paper);
+    text-decoration:none;
+    border-bottom:2px solid var(--brass);
+    padding-bottom:2px;
+  }
+  .ask .contact a:hover{border-bottom-color:var(--paper);}
+  .ask .contact-note{
+    font-size:.95rem;
+    color:rgba(237,239,232,.75);
+    margin-top:1.2rem;
+  }
+
   /* ---------- internal note ---------- */
   .note{
     border:2px dashed var(--brass);
@@ -295,14 +313,14 @@
   }
   .note ul{margin:0;padding-left:1.1rem;font-size:.95rem;}
   .note li{margin-bottom:.5rem;}
- 
+
   footer{
     background:var(--green-dk);color:rgba(237,239,232,.6);
     font-family:var(--data);font-size:.72rem;letter-spacing:.1em;
     text-transform:uppercase;padding:2.2rem 0;
   }
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
- 
+
   /* ---------- motion ---------- */
   @keyframes rise{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
   .mrow{animation:rise .5s both;}
@@ -312,17 +330,17 @@
   @media (prefers-reduced-motion:reduce){
     .mrow{animation:none;}
   }
- 
+
   /* ---------- responsive ---------- */
   @media (max-width:820px){
     .daygrid{grid-template-columns:1fr;}
     .cols{grid-template-columns:1fr;gap:1.5rem;}
- 
+
     .wrap{padding:0 1.3rem;}
     .mday{width:100%;}
     .door{grid-template-columns:3rem 1fr;gap:1rem;}
   }
- 
+
   /* ---------- print / PDF ---------- */
   @media print{
     @page{size:A4;margin:14mm;}
@@ -340,7 +358,7 @@
 </style>
 </head>
 <body>
- 
+
 <!-- ============ HERO ============ -->
 <header class="hero">
   <div class="wrap">
@@ -355,16 +373,16 @@
     </div>
   </div>
 </header>
- 
+
 <!-- ============ SIGNATURE ============ -->
 <section class="signature">
   <div class="wrap">
     <p class="eyebrow eyebrow--dark">The idea</p>
     <h2 class="head">The London Clinic opened in 1932.<br>Move the decimal point and you get the challenge.</h2>
     <p class="lede">Same four digits, three different units, three consecutive days. A hill, a river and a road — each one a completely different kind of hard.</p>
- 
+
     <div class="measures">
- 
+
       <div class="mrow">
         <div class="mday">Saturday</div>
         <div class="mfig">
@@ -372,7 +390,7 @@
         </div>
         <div class="mwhat"><strong>The Hill</strong><span>Fifteen ascents of Box Hill</span></div>
       </div>
- 
+
       <div class="mrow p2">
         <div class="mday">Sunday</div>
         <div class="mfig">
@@ -380,7 +398,7 @@
         </div>
         <div class="mwhat"><strong>The River</strong><span>Thames Path, Teddington to Putney</span></div>
       </div>
- 
+
       <div class="mrow p3">
         <div class="mday">Monday</div>
         <div class="mfig">
@@ -388,19 +406,19 @@
         </div>
         <div class="mwhat"><strong>The Road</strong><span>Bath to the hospital door</span></div>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- ============ THE DAYS ============ -->
 <section class="days">
   <div class="wrap">
     <p class="eyebrow eyebrow--dark">The weekend</p>
     <h2 class="head">Three days, three disciplines</h2>
- 
+
     <div class="daygrid">
- 
+
       <article class="day">
         <p class="eyebrow eyebrow--dark">Day one &middot; Saturday 29 May</p>
         <h3 class="sub">The Hill</h3>
@@ -413,7 +431,7 @@
           <li><span>Join in</span><span>Any number of laps</span></li>
         </ul>
       </article>
- 
+
       <article class="day">
         <p class="eyebrow eyebrow--dark">Day two &middot; Sunday 30 May</p>
         <h3 class="sub">The River</h3>
@@ -426,7 +444,7 @@
           <li><span>Join in</span><span>At any bridge</span></li>
         </ul>
       </article>
- 
+
       <article class="day">
         <p class="eyebrow eyebrow--dark">Day three &middot; Monday 31 May</p>
         <h3 class="sub">The Road</h3>
@@ -439,50 +457,50 @@
           <li><span>Finish</span><span>The London Clinic</span></li>
         </ul>
       </article>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- ============ WHY I RIDE ============ -->
 <section class="why">
   <div class="wrap">
     <p class="eyebrow">Why I ride</p>
- 
+
     <div class="why-quote">
       <blockquote>&ldquo;Everyone needs to raise money for a charity, because it will get them out the door. It will keep them going when it&rsquo;s tough. And they&rsquo;ll have a sense of worth at the end, and pride, because they&rsquo;ve done it for other people rather than just look at me.&rdquo;</blockquote>
       <p class="attrib">Kevin Webster &mdash; interviewed on the Midlife Athlete podcast</p>
     </div>
- 
+
     <div class="why-rule"></div>
- 
+
     <div class="whytext">
       <p>Kevin was diagnosed with terminal prostate cancer in 2014 and given two years to live. Rather than yield to the prognosis, he has run numerous ultra-marathons and raised awareness and funds for charity, notably Prostate Cancer UK. His words had a profound effect on me.</p>
- 
+
       <p>They came back to me when my good friend <strong>David</strong> was diagnosed with cancer in late 2024. As a fit and healthy person, I could and should help people like my mate. I rode in the summer of 2025 to raise money for Macmillan, who had helped David and his wife.</p>
- 
+
       <p>I thought that might be it. David passed away in January 2026.</p>
- 
+
       <p>When he was fit and healthy, David ran, cycled and raced triathlons to raise money for epilepsy charities. I knew immediately what the right thing to do was.</p>
- 
+
       <p class="close">An annual endurance challenge, to raise money for cancer care and to honour his legacy. The 1932 is the first.</p>
     </div>
- 
+
     <figure class="photo">
       <img src="david-and-jason.jpg" alt="David and Jason before the Cardiff Half Marathon">
       <figcaption>David and Jason &mdash; Cardiff Half Marathon, 2016</figcaption>
     </figure>
   </div>
 </section>
- 
+
 <!-- ============ THE HOSPITAL ============ -->
 <section class="hospital">
   <div class="wrap">
     <p class="eyebrow eyebrow--dark">The cause</p>
     <h2 class="head">Riding to outsmart cancer</h2>
- 
+
     <p class="pull">Founded in 1932. Charitable status in 1935. No shareholders, and every penny of surplus reinvested into care.</p>
- 
+
     <div class="cols">
       <div>
         <h3 class="sub">The London Clinic</h3>
@@ -490,23 +508,23 @@
         <p>In oncology it is a recognised leader. The award-winning Duchess of Devonshire Wing is one of the most modern cancer centres in the UK: the first private hospital in the country to offer 3T MRI scanning, the first to gain JACIE accreditation for stem cell work.</p>
       </div>
       <div>
-        <h3 class="sub">The appeal &mdash; <span class="tbc">[TBC]</span></h3>
-        <p><span class="tbc">[Which specific project this first edition funds &mdash; to confirm with the fundraising team. Naming one tangible thing the money buys is the single strongest move on a page like this: donors give to a named ward, a named machine or a named room far more readily than to "cancer care" in the abstract.]</span></p>
+        <h3 class="sub">The appeal</h3>
+        <p>Every pound raised goes to The London Clinic. For this first edition we're working with the clinic's oncology team to focus the money on a specific cancer-care project &mdash; more on exactly what your support will build, soon.</p>
         <p>Every kilometre of this weekend funds compassionate cancer care at one of the UK's most pioneering hospitals. This is where human endurance meets human kindness.</p>
       </div>
     </div>
   </div>
 </section>
- 
+
 <!-- ============ JOIN ============ -->
 <section class="join">
   <div class="wrap">
     <p class="eyebrow eyebrow--dark">Taking part</p>
     <h2 class="head">Three ways in</h2>
     <p class="lede">This isn't a sportive and it isn't a closed challenge. Two of the three days are built so that anybody can join for as much or as little as they want.</p>
- 
+
     <div class="doors">
- 
+
       <div class="door">
         <div class="door-n">01</div>
         <div>
@@ -514,7 +532,7 @@
           <p>Turn up at Box Hill on the Saturday and climb it as many times as you like. Two ascents is a proper morning. Fifteen is the whole thing. The station is at the bottom, there's a café at the top, and you set your own number.</p>
         </div>
       </div>
- 
+
       <div class="door">
         <div class="door-n">02</div>
         <div>
@@ -522,7 +540,7 @@
           <p>Sunday on the Thames Path. Flat, scenic and joinable at eight separate bridges, so you can take on two miles or the full 19.32. Walkers as welcome as runners.</p>
         </div>
       </div>
- 
+
       <div class="door">
         <div class="door-n">03</div>
         <div>
@@ -530,42 +548,28 @@
           <p>The Monday is the solo one. Follow it live, and sponsor by the kilometre if you'd like the number to mean something as it ticks up.</p>
         </div>
       </div>
- 
+
     </div>
   </div>
 </section>
- 
+
 <!-- ============ ASK ============ -->
 <section class="ask">
   <div class="wrap">
     <p class="eyebrow" style="color:rgba(237,239,232,.75)">Get involved</p>
     <h2 class="head">Ride, run, or give</h2>
-    <p class="lede">Registration and sponsorship open <span class="tbc">[date TBC]</span>. To join a day, or to talk about bringing a team, get in touch.</p>
-    <p><span class="tbc">[email address]</span> &nbsp;&middot;&nbsp; <span class="tbc">[donation page URL]</span> &nbsp;&middot;&nbsp; <span class="tbc">[the1932.cc or similar]</span></p>
+    <p class="lede">Want to ride Box Hill, run the river, or bring your club along for a day? I'd love to hear from you.</p>
+    <p class="contact"><a href="mailto:smithjase70@gmail.com?subject=The%201932">smithjase70@gmail.com</a></p>
+    <p class="contact-note">The sponsorship page opens soon &mdash; drop me a line now to take part or to be told the moment it's live.</p>
   </div>
 </section>
- 
-<!-- ============ INTERNAL NOTE — DELETE BEFORE PUBLISHING ============ -->
-<div class="note">
-  <h3>Draft notes — remove before publishing</h3>
-  <ul>
-    <li><strong>Placeholders</strong> are marked in red with a dotted underline. Search the file for <code>tbc</code> to find them all.</li>
-    <li><strong>Date.</strong> Late May bank holiday is the recommendation over August — nearly as much daylight, and Box Hill and the Thames Path are far less crowded before the school holidays.</li>
-    <li><strong>Distances.</strong> The Box Hill and Thames Path figures are firm. The Bath route distance and its ~1,500&nbsp;m of climbing are estimates and need plotting in Komoot or RideWithGPS before they go public.</li>
-    <li><strong>Why I ride</strong> is Jason's own board write-up, lightly tidied for the page (punctuation, and Kevin Webster's quote set as reported speech). The ride321.cc copy has been retired.</li>
-    <li><strong>Names.</strong> David's wife is named in the board version but not here &mdash; worth checking with her before either version is circulated.</li>
-    <li><strong>The appeal.</strong> The single most important box to fill: name one tangible thing this first edition pays for. A named room, machine or ward raises more than "cancer care" in general. Agree it with the fundraising team early.</li>
-    <li><strong>Photography.</strong> The David &amp; Jason photo (Cardiff Half, 2016) is now placed. The file <code>david-and-jason.jpg</code> must sit in the repo root alongside <code>index.html</code>, or the image won't load. Optional additions: a shot on the Zig Zag, one on the river at Teddington Lock, and one at Devonshire Place.</li>
-    <li><strong>For the fundraising team.</strong> The Saturday on Box Hill is the day that decides what this raises. It's the only one with a natural drop-in format and a station at the start line. Worth building recruitment around that day specifically, rather than around the Monday ride.</li>
-  </ul>
-</div>
- 
+
 <footer>
   <div class="wrap">
-    <span>The 1932 &middot; Draft</span>
+    <span>The 1932 &middot; 29&ndash;31 May 2027</span>
     <span>All funds to The London Clinic</span>
   </div>
 </footer>
- 
+
 </body>
 </html>
